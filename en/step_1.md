@@ -1,58 +1,54 @@
+--- no-print ---
+
+This is the **Scratch 2** version of the project. There is also a [Scratch 3 version of the project](https://projects.raspberrypi.org/en/projects/lineup).
+
+--- /no-print ---
+
 ## Introduction
 
-Add project description here. What will learners be making?
+In this project you will make a Scratch game in which you need to find a sprite that is hidden among a huge crowd of other characters.
 
 ### What you will make
 
 --- no-print ---
-Add instructions for using the embedded content here.
+Click on the green flag and, once the curtain is up, try and find the sprite before your time runs out.
 
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
+<iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/259020474/?autostart=false" frameborder="0" allowfullscreen></iframe>
 --- /no-print ---
 
 --- print-only ---
-![Complete project](images/showcase_static.png)
+You have to find the right sprite amongst all these characters before your time runs out.
+
+![showcase](images/showcase.png)
 --- /print-only ---
+
+--- collapse ---
+---
+title: What you will learn
+---
+- How to create custom blocks that have inputs
+- How to use lists to store grid coordinates
+- How to use loops to cycle over items in a list
+--- /collapse ---
 
 --- collapse ---
 ---
 title: What you will need
 ---
 ### Hardware
-
-+ Describe hardware here
++ A computer capable of running Scratch 2.0
 
 ### Software
-
-+ Scratch 2.0 (either [online](http://rpf.io/scratchon) or [offline](http://rpf.io/scratchoff))
-+ Python 3
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io/)
-
-### Downloads
-
-+ [rpf.io/project-name-go](http://rpf.io/project-name-go){:target="_blank"}
-
++ Scratch 2.0 (either [online](http://rpf.io/scratchon){:target="_blank"} or [offline](http://rpf.io/scratchoff){:target="_blank"})
 --- /collapse ---
 
 --- collapse ---
 ---
-title: What you will learn
+title: Additional notes for educators
 ---
+--- no-print ---
+If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/lineup-scratch2/print).
+--- /no-print ---
 
-+ Two or three learning objectives
-+ ...should go here
-
---- /collapse ---
-
---- collapse ---
----
-title: Additional information for educators
----
-
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/project-name/print){:target="_blank"}.
-
-[Here is a link to the resources for this project](http://rpf.io/project-name-go).
-
+You can [find the solution for this project here](http://rpf.io/p/en/lineup-scratch2-get){:target="_blank"}.
 --- /collapse ---
