@@ -18,8 +18,10 @@ To finish this part your game, go to the `when flag clicked`{:class="blockevents
 ![blocks_1545217703_2218666](images/blocks_1545217703_2218666.png)
 
 --- no-print ---
+
 Here's an animation showing what should happen:
 ![animation](images/demo_1.gif)
+
 --- /no-print ---
 
 At the start of the game, the sprite should appear at a large size and say "Find me". Then the sprite should hide itself among the stamps in the empty space you have left for it.
