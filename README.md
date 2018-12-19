@@ -1,14 +1,10 @@
-# lineup-scratch2
+# Lineup
 
-![lineup-scratch2](banner.png)
+In this resource, you are going to learn how to make a game to find a sprite within a grid of stamped costumes, using Scratch.
 
-Find the project online at [projects.raspberrypi.org/en/projects/lineup-scratch2](https://projects.raspberrypi.org/en/projects/lineup-scratch2)
+This repository contains the content for the Lineup  Raspberry Pi project. This project can be viewed at:
 
-## Resources
-For solutions and project materials, see [en/resources](https://github.com/raspberrypilearning/lineup-scratch2/tree/master/en/resources)
+https://projects.raspberrypi.org/en/projects/lineup-scratch2
 
-## Contributing
-See [CONTRIBUTING.md](CONTRIBUTING.md)
+See [LICENCE.md](LICENCE.md) for the project licence, and [CONTRIBUTING.md](CONTRIBUTING.md) for guidance on how to contribute.
 
-## Licence
- See [LICENSE.md](LICENSE.md)
