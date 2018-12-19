@@ -16,6 +16,7 @@ If you run the script now, you can see that your sprite still overlaps with a st
 To finish this part your game, go to the `when flag clicked`{:class="blockevents"} section of the scripts.
 
 ![blocks_1545217703_2218666](images/blocks_1545217703_2218666.png)
+
 --- no-print ---
 Here's an animation showing what should happen:
 ![animation](images/demo_1.gif)
