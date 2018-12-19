@@ -7,17 +7,7 @@ Now it's time to hide your sprite among the crowd of stamps. At the moment the s
 --- task ---
 So this doesn't happen, make your stamp loop run one time less: `(rows * columns) - 1`{:class="blockoperators"}
 
-```blocks
-define stamp sprites (rows) (columns)
-set size to (40) %
-+repeat (((rows) * (columns)) - (1))
-set [index v] to (pick random (1) to (length of [x_positions v]))
-go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
-delete (index) of [x_positions v]
-delete (index) of [y_positions v]
-stamp
-next costume
-```
+![blocks_1545217701_9921536](images/blocks_1545217701_9921536.png)
 --- /task ---
 
 If you run the script now, you can see that your sprite still overlaps with a stamp and there is a hole in your grid. And in the `x_positions`{:class="blockdata"} and `y_positions`{:class="blockdata"} lists, there is one coordinate position left.
@@ -25,12 +15,7 @@ If you run the script now, you can see that your sprite still overlaps with a st
 --- task ---
 To finish this part your game, go to the `when flag clicked`{:class="blockevents"} section of the scripts.
 
-```blocks
-when flag clicked
-clear
-generate positions (4) (10) ::custom
-stamp sprites (4) (10) ::custom
-```
+![blocks_1545217703_2218666](images/blocks_1545217703_2218666.png)
 --- no-print ---
 Here's an animation showing what should happen:
 ![animation](images/demo_1.gif)
@@ -50,42 +35,10 @@ This is what it needs to do:
   6. Move to the last remaining position in the lists
 --- /hint --- --- hint ---
 These are the additional blocks you need:
-```blocks
-when flag clicked
-clear
-generate positions (4) (10) ::custom
-stamp sprites (4) (10) ::custom
-
-go to x: (0) y: (0)
-
-go back (1) layers
-
-go to front
-
-set size to (100) %
-
-set size to (40) %
-
-say [] for (2) secs
-item (1 v) of [x_positions v]
-item (1 v) of [y_positions v]
-go to x: () y: ()
-```
+![blocks_1545217704_3857548](images/blocks_1545217704_3857548.png)
 --- /hint --- --- hint ---
 Here is the completed `when flag clicked`{:class="blockevents"} script:
 
-```blocks
-when flag clicked
-clear
-generate positions (4) (10) ::custom
-stamp sprites (4) (10) ::custom
-+go to x: (0) y: (0)
-+go to front
-+set size to (100) %
-+say [Find me] for (2) secs
-+go back (1) layers
-+set size to (40) %
-+ go to x: (item (1 v) of [x_positions v]) y: (item (1 v) of [y_positions v])
-```
+![blocks_1545217705_5197225](images/blocks_1545217705_5197225.png)
 --- /hint --- --- /hints ---
 --- /task ---
