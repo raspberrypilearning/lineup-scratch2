@@ -5,6 +5,7 @@ Now that you have the code to create a single row of stamped costumes, you shoul
 Go to your `generate positions`{:class="blockmoreblocks"} block.
 
 ![blocks_1545217695_0439427](images/blocks_1545217695_0439427.png)
+
 --- task ---
 Add another `repeat`{:class="blockcontrol"} loop that runs the number of times you give to the `generate positions`{:class="blockmoreblocks"} block as the `rows`{:class="blockmoreblocks"} input. Place the `repeat`{:class="blockcontrol"} loop into your script as shown here:
 
