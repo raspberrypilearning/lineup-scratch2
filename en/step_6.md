@@ -5,7 +5,7 @@ At the moment, your program stamps the same sprite costume over and over, and th
 --- task ---
 Add code to the `stamp sprites`{:class="blockmoreblocks"} block to make the sprite a suitable size before the `repeat`{:class="blockcontrol"} loop starts. Add a block inside the loop to switch the `next costume`{:class="blocklooks"} after the `stamp`{:class="blockpen"} block.
 
-![blocks_1545217691_4903157](images/blocks_1545217691_4903157.png)
+![blocks_1546524631_2884126](images/blocks_1546524631_2884126.png)
 --- /task ---
 
 When you run the script now, you should see something like this:
@@ -34,11 +34,11 @@ Then `delete`{:class="blockdata"} the item at the `index`{:class="blockdata"} fr
 --- /hint --- --- hint ---
 
 Here are the additional blocks you need:
-![blocks_1545217692_6351922](images/blocks_1545217692_6351922.png)
+![blocks_1546524632_9946375](images/blocks_1546524632_9946375.png)
 --- /hint --- --- hint ---
 
 This is what your code should look like:
 
-![blocks_1545217693_844692](images/blocks_1545217693_844692.png)
+![blocks_1546524634_760944](images/blocks_1546524634_760944.png)
 --- /hint --- --- /hints ---
 --- /task ---

@@ -5,7 +5,7 @@ To test the script, you need to **call** the custom block and provide it with th
 
 Add this code to your sprite:
 
-![blocks_1545217683_3041053](images/blocks_1545217683_3041053.png)
+![blocks_1546524619_8263285](images/blocks_1546524619_8263285.png)
 --- /task ---
 
 --- task ---

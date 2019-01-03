@@ -13,7 +13,7 @@ The values of these parameters will decide how many rows and columns your grid h
 
 [[[generic-scratch-make-block]]]
 
-![blocks_1545217675_554085](images/blocks_1545217675_554085.png)
+![blocks_1546524609_263937](images/blocks_1546524609_263937.png)
 --- /task ---
 
 --- task ---
@@ -23,7 +23,7 @@ Create two lists, and call one of them `x_positions`{:class="blockdata"} and the
 --- task ---
 Inside your `generate positions`{:class="blockmoreblocks"} block, add blocks to delete all the items from both lists, so that each time the game starts, the lists are empty.
 
-![blocks_1545217677_4450889](images/blocks_1545217677_4450889.png)
+![blocks_1546524611_7804713](images/blocks_1546524611_7804713.png)
 --- /task ---
 
 --- task ---
@@ -37,7 +37,7 @@ For now, the `y_positions`{:class="blockdata"} list can just contain the number 
 --- task ---
 Start by adding code to the `generate positions`{:class="blockmoreblocks"} block to set the `y_pos`{:class="blockdata"} variable to `-150`{:class="blockdata"} and the `x_pos`{:class="blockdata"} variable to `-200`{:class="blockdata"}. This is the location of the first stamped sprite.
 
-![blocks_1545217678_596527](images/blocks_1545217678_596527.png)
+![blocks_1546524613_3561943](images/blocks_1546524613_3561943.png)
 --- /task ---
 
 --- task ---
@@ -47,7 +47,7 @@ The `repeat`{:class="blockcontrol"} loop should run once for every column you wa
 
 The `generate positions`{:class="blockmoreblocks"} block takes `columns`{:class="blockmoreblocks"} as an input, so you can use `columns`{:class="blockmoreblocks"} for the `repeat`{:class="blockcontrol"} loop.
 
-![blocks_1545217679_7546215](images/blocks_1545217679_7546215.png)
+![blocks_1546524614_941201](images/blocks_1546524614_941201.png)
 --- /task ---
 	
 Within the `repeat`{:class="blockcontrol"} loop, add the values of `x_pos`{:class="blockdata"} and `y_pos`{:class="blockdata"} into the lists. Then you need to increase the value of `x_pos`{:class="blockdata"} by a little. How much should the value of `x_pos`{:class="blockdata"} increase by?
@@ -69,10 +69,10 @@ Then `x_pos`{:class="blockdata"} variable needs to increase by `400 / (columns -
 --- /hint --- --- hint ---
 This shows the additional blocks you need to add into your script.
 
-![blocks_1545217680_9014738](images/blocks_1545217680_9014738.png)
+![blocks_1546524616_5312128](images/blocks_1546524616_5312128.png)
 --- /hint --- --- hint ---
 
 - Here is the completed script for the `generate positions`{:class="blockmoreblocks"} block:
-![blocks_1545217682_0945194](images/blocks_1545217682_0945194.png)
+![blocks_1546524618_181511](images/blocks_1546524618_181511.png)
 --- /hint --- --- /hints ---
 --- /task ---
