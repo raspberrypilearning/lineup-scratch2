@@ -7,7 +7,7 @@ Now it's time to hide your sprite among the crowd of stamps. At the moment the s
 --- task ---
 So this doesn't happen, make your stamp loop run one time less: `(rows * columns) - 1`{:class="blockoperators"}
 
-![blocks_1545217701_9921536](images/blocks_1545217701_9921536.png)
+![blocks_1546524646_3944266](images/blocks_1546524646_3944266.png)
 --- /task ---
 
 If you run the script now, you can see that your sprite still overlaps with a stamp and there is a hole in your grid. And in the `x_positions`{:class="blockdata"} and `y_positions`{:class="blockdata"} lists, there is one coordinate position left.
@@ -15,7 +15,7 @@ If you run the script now, you can see that your sprite still overlaps with a st
 --- task ---
 To finish this part your game, go to the `when flag clicked`{:class="blockevents"} section of the scripts.
 
-![blocks_1545217703_2218666](images/blocks_1545217703_2218666.png)
+![blocks_1546524648_0798488](images/blocks_1546524648_0798488.png)
 
 --- no-print ---
 
@@ -38,10 +38,10 @@ This is what it needs to do:
   6. Move to the last remaining position in the lists
 --- /hint --- --- hint ---
 These are the additional blocks you need:
-![blocks_1545217704_3857548](images/blocks_1545217704_3857548.png)
+![blocks_1546524649_7292283](images/blocks_1546524649_7292283.png)
 --- /hint --- --- hint ---
 Here is the completed `when flag clicked`{:class="blockevents"} script:
 
-![blocks_1545217705_5197225](images/blocks_1545217705_5197225.png)
+![blocks_1546524651_4277918](images/blocks_1546524651_4277918.png)
 --- /hint --- --- /hints ---
 --- /task ---

@@ -5,20 +5,20 @@ So far you have ten values in each of the two lists. Now stamp some costumes at 
 --- task ---
 Create a new block and call it `stamp sprites`{:class="blockmoreblocks"}. This block needs two number inputs named `row`{:class="blockmoreblocks"} and `columns`{:class="blockmoreblocks"} just like the other custom block.
 
-![blocks_1545217684_4455156](images/blocks_1545217684_4455156.png)
+![blocks_1546524621_4812958](images/blocks_1546524621_4812958.png)
 --- /task ---
 
 --- task ---
 Create a new variable called `index`{:class="blockdata"} with which to track the position in the lists that your program is reading. To begin with, set `index`{:class="blockdata"} to `1`{:class="blockdata"} to fetch the first item of each list.
 
-![blocks_1545217685_6097097](images/blocks_1545217685_6097097.png)
+![blocks_1546524623_0631769](images/blocks_1546524623_0631769.png)
 --- /task ---
 
 --- task ---
 
 The `stamp sprites`{:class="blockmoreblocks"} block should stamp a sprite for each pair of coordinates in the list. To do this, the block needs a `repeat`{:class="blockdata"} loop that runs once for each column.
 
-![blocks_1545217686_743763](images/blocks_1545217686_743763.png)
+![blocks_1546524624_7201645](images/blocks_1546524624_7201645.png)
 --- /task ---	
 
 --- task ---
@@ -33,17 +33,17 @@ Within the `repeat`{:class="blockdata"} loop, add a `go to x: y:`{:class="blockm
 
 --- /hint --- --- hint ---
 Here are the blocks you need:
-![blocks_1545217688_1405869](images/blocks_1545217688_1405869.png)
+![blocks_1546524626_3080533](images/blocks_1546524626_3080533.png)
 --- /hint --- --- hint ---
 Here is the completed script for the `stamp sprites`{:class="blockmoreblocks"} block:
-![blocks_1545217689_3209808](images/blocks_1545217689_3209808.png)
+![blocks_1546524627_9870348](images/blocks_1546524627_9870348.png)
 --- /hint --- --- /hints ---
 --- /task ---
 
 --- task ---
 Add a `clear`{:class="blockpen"} block below the `when flag clicked`{:class="blockcontrol"} block to clear the Stage each time the game starts. Then add the `stamp sprites`{:class="blockmoreblocks"} block at the bottom of the `when flag clicked`{:class="blockcontrol"} script so you can test your new code.
 
-![blocks_1545217690_4237092](images/blocks_1545217690_4237092.png)
+![blocks_1546524629_6502128](images/blocks_1546524629_6502128.png)
 --- /task ---	
 
 --- task ---

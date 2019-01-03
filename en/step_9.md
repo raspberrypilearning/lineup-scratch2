@@ -11,13 +11,13 @@ Import this image as a sprite.
 --- task ---
 Position the new curtain sprite at `x:0 y:0`{:class="blockmotion"}, and then change its size so that it fills the screen. Make sure it is visible.
 
-![blocks_1545217706_7095413](images/blocks_1545217706_7095413.png)
+![blocks_1546524653_0758364](images/blocks_1546524653_0758364.png)
 --- /task ---
 
 --- task ---
 Then, in the scripts for your character sprite, add a `broadcast`{:class="blockevents"} with the message 'curtain up' to the end of the `when flag clicked`{:class="blockevents"} script.
 
-![blocks_1545217707_782155](images/blocks_1545217707_782155.png)
+![blocks_1546524654_7081025](images/blocks_1546524654_7081025.png)
 --- /task ---
 
 --- task ---
@@ -44,10 +44,10 @@ For the curtain sprite, you need a script that does the following things:
   1. `Glide`{:class="blockmotion"} the curtain sprite back to its original position
 --- /hint --- --- hint ---
 Here are the blocks you need:
-![blocks_1545217708_931363](images/blocks_1545217708_931363.png)
+![blocks_1546524656_3993578](images/blocks_1546524656_3993578.png)
 --- /hint --- --- hint ---
  This is the completed script:
-![blocks_1545217710_0102563](images/blocks_1545217710_0102563.png)
+![blocks_1546524658_032193](images/blocks_1546524658_032193.png)
 --- /hint --- --- /hints ---
 --- /task ---
 
@@ -56,6 +56,6 @@ The very last part is to let the player know if they've won.
 --- task ---
 In the scripts for the the character sprite, add code so that, when the sprite is clicked, the sprite says `You've found me`{:class="blocklooks"}, and all the scripts in the game stop.
 	
-![blocks_1545217711_2294376](images/blocks_1545217711_2294376.png)
+![blocks_1546524659_7249045](images/blocks_1546524659_7249045.png)
 --- /task ---
 
