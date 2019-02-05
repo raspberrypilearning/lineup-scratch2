@@ -11,13 +11,31 @@ Import this image as a sprite.
 --- task ---
 Position the new curtain sprite at `x:0 y:0`{:class="blockmotion"}, and then change its size so that it fills the screen. Make sure it is visible.
 
-![blocks_1546524653_0758364](images/blocks_1546524653_0758364.png)
+```blocks
+when flag clicked
+go to x: (0) y: (0)
+set size to (110) %
+show
+```
 --- /task ---
 
 --- task ---
 Then, in the scripts for your character sprite, add a `broadcast`{:class="blockevents"} with the message 'curtain up' to the end of the `when flag clicked`{:class="blockevents"} script.
 
-![blocks_1546524654_7081025](images/blocks_1546524654_7081025.png)
+```blocks
+when flag clicked
+clear
+generate positions (4) (10) ::custom
+stamp sprites (4) (10) ::custom
+go to x: (0) y: (0)
+go to front
+set size to (100) %
+say [Find me] for (2) secs
+go back (1) layers
+set size to (40) %
+go to x: (item (1 v) of [x_positions v]) y: (item (1 v) of [y_positions v])
++broadcast [curtain up v]
+```
 --- /task ---
 
 --- task ---
@@ -44,10 +62,45 @@ For the curtain sprite, you need a script that does the following things:
   1. `Glide`{:class="blockmotion"} the curtain sprite back to its original position
 --- /hint --- --- hint ---
 Here are the blocks you need:
-![blocks_1546524656_3993578](images/blocks_1546524656_3993578.png)
+```blocks
+go to front
+
+show
+
+hide
+
+glide (1) secs to x: (0) y: (0)
+
+glide (1) secs to x: (0) y: (0)
+
+set [timer v] to []
+
+change [timer v] by ()
+
+wait () secs
+
+wait () secs
+
+repeat ()
+end
+when I receive [curtain up v]
+```
 --- /hint --- --- hint ---
  This is the completed script:
-![blocks_1546524658_032193](images/blocks_1546524658_032193.png)
+ ```blocks
+when I receive [curtain up v]
+go to front
+wait (1) secs
+glide (1) secs to x: (0) y: (300)
+hide
+set [timer v] to [10]
+repeat (10)
+wait (1) secs
+change [timer v] by (-1)
+end
+show
+glide (1) secs to x: (0) y: (0)
+```
 --- /hint --- --- /hints ---
 --- /task ---
 
@@ -56,6 +109,10 @@ The very last part is to let the player know if they've won.
 --- task ---
 In the scripts for the the character sprite, add code so that, when the sprite is clicked, the sprite says `You've found me`{:class="blocklooks"}, and all the scripts in the game stop.
 	
-![blocks_1546524659_7249045](images/blocks_1546524659_7249045.png)
+```blocks
+when this sprite clicked
+say [You found me]
+stop [all v]
+```
 --- /task ---
 
