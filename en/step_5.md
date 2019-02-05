@@ -5,20 +5,29 @@ So far you have ten values in each of the two lists. Now stamp some costumes at 
 --- task ---
 Create a new block and call it `stamp sprites`{:class="blockmoreblocks"}. This block needs two number inputs named `row`{:class="blockmoreblocks"} and `columns`{:class="blockmoreblocks"} just like the other custom block.
 
-![blocks_1546524621_4812958](images/blocks_1546524621_4812958.png)
+```blocks
+define stamp sprites (rows) (columns)
+```
 --- /task ---
 
 --- task ---
 Create a new variable called `index`{:class="blockdata"} with which to track the position in the lists that your program is reading. To begin with, set `index`{:class="blockdata"} to `1`{:class="blockdata"} to fetch the first item of each list.
 
-![blocks_1546524623_0631769](images/blocks_1546524623_0631769.png)
+```blocks
+define stamp sprites (rows) (columns)
++ set [index v] to [1]
+```
 --- /task ---
 
 --- task ---
 
 The `stamp sprites`{:class="blockmoreblocks"} block should stamp a sprite for each pair of coordinates in the list. To do this, the block needs a `repeat`{:class="blockdata"} loop that runs once for each column.
 
-![blocks_1546524624_7201645](images/blocks_1546524624_7201645.png)
+```blocks
+define stamp sprites (rows) (columns)
+set [index v] to [1]
++ repeat (columns)
+```
 --- /task ---	
 
 --- task ---
@@ -33,17 +42,42 @@ Within the `repeat`{:class="blockdata"} loop, add a `go to x: y:`{:class="blockm
 
 --- /hint --- --- hint ---
 Here are the blocks you need:
-![blocks_1546524626_3080533](images/blocks_1546524626_3080533.png)
+```blocks
+define stamp sprites (rows) (columns)
+set [index v] to [1]
+repeat (columns)
+end
+
+change [index v] by (1)
+(index) 
+(index) 
+go to x: () y: ()
+(item ()of [y_positions v])
+(item ()of [x_positions v])
+stamp
+```
 --- /hint --- --- hint ---
 Here is the completed script for the `stamp sprites`{:class="blockmoreblocks"} block:
-![blocks_1546524627_9870348](images/blocks_1546524627_9870348.png)
+```blocks
+define stamp sprites (rows) (columns)
+set [index v] to [1]
+repeat (columns)
++ go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
++ stamp
++ change [index v] by (1)
+```
 --- /hint --- --- /hints ---
 --- /task ---
 
 --- task ---
 Add a `clear`{:class="blockpen"} block below the `when flag clicked`{:class="blockcontrol"} block to clear the Stage each time the game starts. Then add the `stamp sprites`{:class="blockmoreblocks"} block at the bottom of the `when flag clicked`{:class="blockcontrol"} script so you can test your new code.
 
-![blocks_1546524629_6502128](images/blocks_1546524629_6502128.png)
+```blocks
+when flag clicked
+clear
+generate positions (1) (10) ::custom
+stamp sprite (1) (10) ::custom
+```
 --- /task ---	
 
 --- task ---

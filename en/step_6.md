@@ -5,7 +5,16 @@ At the moment, your program stamps the same sprite costume over and over, and th
 --- task ---
 Add code to the `stamp sprites`{:class="blockmoreblocks"} block to make the sprite a suitable size before the `repeat`{:class="blockcontrol"} loop starts. Add a block inside the loop to switch the `next costume`{:class="blocklooks"} after the `stamp`{:class="blockpen"} block.
 
-![blocks_1546524631_2884126](images/blocks_1546524631_2884126.png)
+```blocks
+define stamp sprites (rows) (columns)
+set size to (40) %
+set [index v] to [1]
+repeat (columns)
+go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
+stamp
+next costume
+change [index v] by (1)
+```
 --- /task ---
 
 When you run the script now, you should see something like this:
@@ -34,11 +43,42 @@ Then `delete`{:class="blockdata"} the item at the `index`{:class="blockdata"} fr
 --- /hint --- --- hint ---
 
 Here are the additional blocks you need:
-![blocks_1546524632_9946375](images/blocks_1546524632_9946375.png)
+```blocks
+define stamp sprites (rows) (columns)
+set size to (40) %
+- set [index v] to [1]
+repeat (columns)
+go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
+stamp
+next costume
+- change [index v] by (1)
+end
+
+set [index v] to ()
+(pick random () to ()
+length of [x_positions v]
+delete () of [x_positions v]
+
+delete () of [y_positions v]
+(index)
+(index)
+```
 --- /hint --- --- hint ---
 
 This is what your code should look like:
 
-![blocks_1546524634_760944](images/blocks_1546524634_760944.png)
+```blocks
+define stamp sprites (rows) (columns)
+set size to (40) %
+- set [index v] to [1]
+repeat (columns)
++ set [index v] to (pick random (1) to (length of [x_positions v]))
+go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
++ delete (index) of [x_positions v]
++ delete (index) of [y_positions v]
+stamp
+next costume
+- change [index v] by (1)
+```
 --- /hint --- --- /hints ---
 --- /task ---
